@@ -1,0 +1,20 @@
+{
+  "name": "msmedical",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test":"live-server"
+    // "test2": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohammedFarhan1036/msmedical.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohammedFarhan1036/msmedical/issues"
+  },
+  "homepage": "https://github.com/MohammedFarhan1036/msmedical#readme"
+}
