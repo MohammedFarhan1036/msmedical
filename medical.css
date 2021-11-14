@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(71, 133, 173, 0.73)),url('bg.jpg');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:15vh;
+    width:100%;
+    background-color: rgba(114, 53, 212,0);
+    position: relative;
+    
+}
+.logo{
+    z-index: 4;
+    background-color: #fff;
+}
+.nav{
+    /* display: flex; */
+    /* position: relative; */
+    z-index: 2;
+    /* background-color: #fff; */
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    /* margin-top: 20px; */
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding:20px;
+    color: rgb(1, 1, 22);
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+.nav ul li a:hover{
+    background:rgba(0,0,0,0.6)
+    
+}
+main{
+    position: relative;
+    height:80vh;
+}
+.quote{
+    /* border:1px solid black; */
+    position: absolute;
+    top:20%;
+    left: 10%;
+    padding: 100px;
+    font-size: 51px;
+    background: antiquewhite;
+    border-radius: 187px;
+    color:rgb(3, 80, 32);
+}
+.hamburger{
+    position: absolute;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    right:2%;
+    top:10px;
+    z-index: 200;
+    display: hidden;
+}
+.line{
+    background-color: #fff;
+    width:33px;
+    height:5px;
+    margin-top: 4px;
+    
+}
+@media  (max-width:700px) {
+    header{
+        flex-direction: column;
+        position: absolute;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .nav ul{
+        /* display: none; */
+        background-color: rgba(114, 53, 212,1);;
+        position: absolute;
+        height:100vh;
+        width: 100vw;
+        top:0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        
+    }
+   
+    
+}
